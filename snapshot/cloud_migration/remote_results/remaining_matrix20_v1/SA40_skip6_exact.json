@@ -1,0 +1,6 @@
+{
+  "status": "PASS",
+  "max_logit_difference": 0.0,
+  "activation": "unsigned A[0,15]",
+  "tile_boundary_integer_dot_products_identical": true
+}

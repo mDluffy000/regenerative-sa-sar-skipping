@@ -1,0 +1,19 @@
+{
+  "target_mV": 20,
+  "threshold_mV": 19,
+  "skip": 6,
+  "ADC_bits": 8,
+  "zero_gating": false,
+  "voltage_range": [
+    0,
+    1.2
+  ],
+  "epochs": 5,
+  "train_images": 2000,
+  "validation_images": 500,
+  "test_images": 1000,
+  "BN_calibration": "one pass of original hardware train IDs, batch32, no augmentation, reset statistics, cumulative average; no optimizer and no labels",
+  "finetune": "same AdamW1e-5 to1e-6; batch4; CE+0.5*T\u00b2*KL T2; frozen digital W4A4 teacher; BN stats frozen, affine and quantizer scales trainable",
+  "selection": "validation accuracy then CE; epoch0 eligible; freeze before testing; no extensions",
+  "scope": "Additional user-requested exploratory point after earlier test results; not predeclared primary matrix. SA physical model and existing failed results unchanged."
+}

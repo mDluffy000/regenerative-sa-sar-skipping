@@ -1,0 +1,28 @@
+{
+  "sources": {
+    "/root/autodl-tmp/adc_wrn_sparsity_cause_v1/hardware.py": "5931822e9a330fa4a7a4f4b7dccd63ac0b0cb2b6238a60aadc7c12bcd8bac86e",
+    "/root/autodl-tmp/adc_wrn_sparsity_cause_v1/oracle.py": "fba58ed57be8159d2fc1db837ddde62ce062735120ffffaa2f6687318684270a",
+    "/root/autodl-tmp/adc_wrn_sparsity_cause_v1/preflight.py": "9c27a98f93e21f080cffa0b8d6a00fafea15250ea18778e3e008e46c7a490af7",
+    "/root/autodl-tmp/adc_wrn_sparsity_cause_v1/run.py": "c4ef57cf65f0b1493f4194cc31fd8ede512a43b19062fdc7e13739c458cb7ab5",
+    "/root/autodl-tmp/adc_wrn_sparsity_cause_v1/events_cisa.cu": "801914d52247ca52e98254d0cc8bc039764510777a8beccb4e6dd787ea3b2395",
+    "/root/autodl-tmp/adc_wrn_sparsity_cause_v1/held_20.bin": "0982dd85d47a08730aba484e188c36329a985ab8f5c74b328e6d3e336fb796b5",
+    "/root/autodl-tmp/adc_wrn_sparsity_cause_v1/held_40.bin": "9b77e4c949ac92b99ff101f53c8183a9b2ff70a26bbd35d8f2e50417c6a908c5",
+    "/root/autodl-tmp/adc_wrn_sparsity_cause_v1/input/PACKAGE_MANIFEST.json": "4ad36534c3c5b51197b45132b26ef124a3e76e0ce703e078f4b0f904a603febd",
+    "/root/autodl-tmp/adc_wrn_sparsity_cause_v1/input/REPORT.md": "cc4461ba6314f86b9098a565583da26fee9d4a31c0e9642253df8285859c740d",
+    "/root/autodl-tmp/adc_wrn_sparsity_cause_v1/input/final_events.csv": "96e8af31879aad8f765258c51469e8ba7a2f49a0926bec47cbaafc8b7750c823",
+    "/root/autodl-tmp/adc_wrn_sparsity_cause_v1/input/final_summary.csv": "344370253c1aa053d91b54e6495de6cacc2f3a2857608d070a6de56b467de496",
+    "/root/autodl-tmp/adc_wrn_sparsity_cause_v1/input/held_disturbance_vs_removed.csv": "d5fb48da6aecd1dd33ac6c62755ec324f33a25a869fb4afbcd754d945fa8220b",
+    "/root/autodl-tmp/adc_wrn_sparsity_cause_v1/FROZEN_PROTOCOL.json": "8f1ba394b00f4772e348a9f58ab87fd306430f285024773664a374949fde11a2",
+    "/root/autodl-tmp/adc_wrn28_10_extend_v1/W4A4_best.pt": "18a5ea51a44fbed58dabd8ffb809a107cee55847133771468f3566225b2660f3",
+    "/root/autodl-tmp/adc_wrn28_10_extend_v1/pilot_split.json": "160bd0357d79efacbd0ec9d73384ec8eace462775b4ece9223c9ae34e2b87cf8",
+    "/root/autodl-tmp/adc_wrn28_10_v1/calibration.json": "58b4a5aeaf817c4b90e922d9935b882713ea8111f83df6e0e898265a7ceb7898",
+    "/root/autodl-tmp/adc_wrn28_10_v1/train_wrn.py": "ee97fc2c6a6f9bf82f862d32de164a88fce5ed094e474d5a1b70b728945db5ba",
+    "/root/autodl-tmp/adc_wrn28_10_v1/gpu_hardware.py": "2e1089f06cfb842f7b1edc9a23614d1644ccd1bf2d2a8f70a17d795763569962",
+    "/root/autodl-tmp/adc_wrn28_10_v1/wrn.py": "8f8845e96f0b390b9ac00a593444efc92763629c1f36a2a37e34019167efa3f4",
+    "/root/autodl-tmp/adc_deit_cloud_v1/model.py": "f84a4b33a7b8a1dffa73d61f47955030dfe7c9ba3ea790cbbfbabf8a77f0e8c5",
+    "/root/autodl-tmp/adc_deit_cloud_v1/data.py": "06ebdb8c0d22cabfdcbdcdcd4f16fd3906543d053e6cc71c00ad88cbef41962d"
+  },
+  "torch": "2.8.0+cu128",
+  "cuda": "12.8",
+  "gpu": "NVIDIA RTX 6000D"
+}

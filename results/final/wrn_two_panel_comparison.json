@@ -1,0 +1,18 @@
+{
+  "skip": [
+    4,
+    5,
+    6
+  ],
+  "BN_only_accuracy": [
+    73.4,
+    68.5,
+    68.89999999999999
+  ],
+  "trained_accuracy": [
+    75.5,
+    76.2,
+    77.3
+  ],
+  "scope": "BN-calibrated starting checkpoints versus their trained descendants; complete physical behavior in both arms"
+}

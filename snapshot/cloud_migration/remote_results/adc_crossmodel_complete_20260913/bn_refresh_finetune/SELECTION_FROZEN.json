@@ -1,0 +1,260 @@
+{
+  "native_ADC": {
+    "epochs_finished": 5,
+    "best_epoch": 2,
+    "validation": {
+      "n": 500,
+      "correct": 378,
+      "accuracy": 0.756,
+      "CE": 0.8218297958374023,
+      "seconds": 1.7318506864830852,
+      "hardware": {
+        "requests": 311296000,
+        "gated": 0,
+        "conversions": 311296000,
+        "sa_calls": 0,
+        "near": 0,
+        "comparisons": 2490368000,
+        "code_errors": 0,
+        "analog_code_errors": 0,
+        "prefix_code_errors": 0,
+        "clipped_raw": 0,
+        "absolute_code_error": 0,
+        "comparison_saving": 0.0,
+        "layers": {
+          "layer1.0.conv1": {
+            "requests": 131072000,
+            "gated": 0,
+            "conversions": 131072000,
+            "sa_calls": 0,
+            "near": 0,
+            "comparisons": 1048576000,
+            "code_errors": 0,
+            "analog_code_errors": 0,
+            "prefix_code_errors": 0,
+            "clipped_raw": 0,
+            "absolute_code_error": 0
+          },
+          "layer2.1.conv2": {
+            "requests": 98304000,
+            "gated": 0,
+            "conversions": 98304000,
+            "sa_calls": 0,
+            "near": 0,
+            "comparisons": 786432000,
+            "code_errors": 0,
+            "analog_code_errors": 0,
+            "prefix_code_errors": 0,
+            "clipped_raw": 0,
+            "absolute_code_error": 0
+          },
+          "layer3.2.conv2": {
+            "requests": 81920000,
+            "gated": 0,
+            "conversions": 81920000,
+            "sa_calls": 0,
+            "near": 0,
+            "comparisons": 655360000,
+            "code_errors": 0,
+            "analog_code_errors": 0,
+            "prefix_code_errors": 0,
+            "clipped_raw": 0,
+            "absolute_code_error": 0
+          }
+        },
+        "CISA": {
+          "valid_detector_calls": 0,
+          "rail_bypass_calls": 0,
+          "held_d_edge_extrapolation_calls": 0,
+          "held_CM_edge_extrapolation_calls": 0,
+          "threshold_bracket_calls": 0,
+          "target_mV": 20,
+          "skip": 6,
+          "held_injected": false,
+          "modeled_detector_subtotal_upper_pJ": 0.0
+        },
+        "sparsity_diagnostic": {
+          "potential_zero_gated_events_NOT_skipped": 98835040,
+          "activation_zeros": 7177084,
+          "activation_elements": 14336000,
+          "weight_zeros_repeated_per_call": 1176375,
+          "weight_elements_repeated_per_call": 6048000
+        },
+        "SA_hit_fraction_of_all_conversions": 0.0,
+        "whole_ADC_conversion_skip_fraction": 0.0
+      }
+    }
+  },
+  "SA20_skip4": {
+    "epochs_finished": 5,
+    "best_epoch": 4,
+    "validation": {
+      "n": 500,
+      "correct": 359,
+      "accuracy": 0.718,
+      "CE": 0.9736466407775879,
+      "seconds": 1.9281810652464628,
+      "hardware": {
+        "requests": 311296000,
+        "gated": 0,
+        "conversions": 311296000,
+        "sa_calls": 305024000,
+        "near": 169709860,
+        "comparisons": 1811528560,
+        "code_errors": 291552664,
+        "analog_code_errors": 294135197,
+        "prefix_code_errors": 15516790,
+        "clipped_raw": 0,
+        "absolute_code_error": 909035732,
+        "comparison_saving": 0.2725859953227796,
+        "layers": {
+          "layer1.0.conv1": {
+            "requests": 131072000,
+            "gated": 0,
+            "conversions": 131072000,
+            "sa_calls": 126976000,
+            "near": 68843268,
+            "comparisons": 773202928,
+            "code_errors": 115799057,
+            "analog_code_errors": 116113406,
+            "prefix_code_errors": 4378154,
+            "clipped_raw": 0,
+            "absolute_code_error": 336728235
+          },
+          "layer2.1.conv2": {
+            "requests": 98304000,
+            "gated": 0,
+            "conversions": 98304000,
+            "sa_calls": 96768000,
+            "near": 59000368,
+            "comparisons": 550430528,
+            "code_errors": 95551054,
+            "analog_code_errors": 96767989,
+            "prefix_code_errors": 5860693,
+            "clipped_raw": 0,
+            "absolute_code_error": 320907490
+          },
+          "layer3.2.conv2": {
+            "requests": 81920000,
+            "gated": 0,
+            "conversions": 81920000,
+            "sa_calls": 81280000,
+            "near": 41866224,
+            "comparisons": 487895104,
+            "code_errors": 80202553,
+            "analog_code_errors": 81253802,
+            "prefix_code_errors": 5277943,
+            "clipped_raw": 0,
+            "absolute_code_error": 251400007
+          }
+        },
+        "CISA": {
+          "valid_detector_calls": 305024000,
+          "rail_bypass_calls": 0,
+          "held_d_edge_extrapolation_calls": 113479107,
+          "held_CM_edge_extrapolation_calls": 111757652,
+          "threshold_bracket_calls": 122057399,
+          "target_mV": 20,
+          "skip": 4,
+          "held_injected": true,
+          "modeled_detector_subtotal_upper_pJ": 17416870.4
+        },
+        "sparsity_diagnostic": {
+          "potential_zero_gated_events_NOT_skipped": 90781792,
+          "activation_zeros": 7012706,
+          "activation_elements": 14336000,
+          "weight_zeros_repeated_per_call": 1199375,
+          "weight_elements_repeated_per_call": 6048000
+        },
+        "SA_hit_fraction_of_all_conversions": 0.5451719906455592,
+        "whole_ADC_conversion_skip_fraction": 0.0
+      }
+    }
+  },
+  "SA40_skip6": {
+    "epochs_finished": 5,
+    "best_epoch": 3,
+    "validation": {
+      "n": 500,
+      "correct": 286,
+      "accuracy": 0.572,
+      "CE": 1.5958244800567627,
+      "seconds": 1.9104261482134461,
+      "hardware": {
+        "requests": 311296000,
+        "gated": 0,
+        "conversions": 311296000,
+        "sa_calls": 305024000,
+        "near": 195965971,
+        "comparisons": 1314572174,
+        "code_errors": 294840264,
+        "analog_code_errors": 300015566,
+        "prefix_code_errors": 166124310,
+        "clipped_raw": 0,
+        "absolute_code_error": 1235325603,
+        "comparison_saving": 0.472137381302683,
+        "layers": {
+          "layer1.0.conv1": {
+            "requests": 131072000,
+            "gated": 0,
+            "conversions": 131072000,
+            "sa_calls": 126976000,
+            "near": 83012042,
+            "comparisons": 550503748,
+            "code_errors": 122050954,
+            "analog_code_errors": 122015445,
+            "prefix_code_errors": 73230660,
+            "clipped_raw": 0,
+            "absolute_code_error": 441669165
+          },
+          "layer2.1.conv2": {
+            "requests": 98304000,
+            "gated": 0,
+            "conversions": 98304000,
+            "sa_calls": 96768000,
+            "near": 67109196,
+            "comparisons": 383776824,
+            "code_errors": 93906393,
+            "analog_code_errors": 96767999,
+            "prefix_code_errors": 55938251,
+            "clipped_raw": 0,
+            "absolute_code_error": 431035033
+          },
+          "layer3.2.conv2": {
+            "requests": 81920000,
+            "gated": 0,
+            "conversions": 81920000,
+            "sa_calls": 81280000,
+            "near": 45844733,
+            "comparisons": 380291602,
+            "code_errors": 78882917,
+            "analog_code_errors": 81232122,
+            "prefix_code_errors": 36955399,
+            "clipped_raw": 0,
+            "absolute_code_error": 362621405
+          }
+        },
+        "CISA": {
+          "valid_detector_calls": 305024000,
+          "rail_bypass_calls": 0,
+          "held_d_edge_extrapolation_calls": 89943519,
+          "held_CM_edge_extrapolation_calls": 80647973,
+          "threshold_bracket_calls": 25518549,
+          "target_mV": 40,
+          "skip": 6,
+          "held_injected": true,
+          "modeled_detector_subtotal_upper_pJ": 18700716.416
+        },
+        "sparsity_diagnostic": {
+          "potential_zero_gated_events_NOT_skipped": 75841248,
+          "activation_zeros": 6616439,
+          "activation_elements": 14336000,
+          "weight_zeros_repeated_per_call": 1152625,
+          "weight_elements_repeated_per_call": 6048000
+        },
+        "SA_hit_fraction_of_all_conversions": 0.6295165084035773,
+        "whole_ADC_conversion_skip_fraction": 0.0
+      }
+    }
+  }
+}

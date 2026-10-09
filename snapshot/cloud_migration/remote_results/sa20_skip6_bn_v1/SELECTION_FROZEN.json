@@ -1,0 +1,88 @@
+{
+  "SA20_skip6": {
+    "epochs_finished": 5,
+    "best_epoch": 2,
+    "validation": {
+      "n": 500,
+      "correct": 335,
+      "accuracy": 0.67,
+      "CE": 1.2063359022140503,
+      "seconds": 1.425743873231113,
+      "hardware": {
+        "requests": 311296000,
+        "gated": 0,
+        "conversions": 311296000,
+        "sa_calls": 305024000,
+        "near": 160879674,
+        "comparisons": 1525089956,
+        "code_errors": 285661776,
+        "analog_code_errors": 294295956,
+        "prefix_code_errors": 56861057,
+        "clipped_raw": 0,
+        "absolute_code_error": 834870785,
+        "comparison_saving": 0.38760458052785773,
+        "layers": {
+          "layer1.0.conv1": {
+            "requests": 131072000,
+            "gated": 0,
+            "conversions": 131072000,
+            "sa_calls": 126976000,
+            "near": 69018962,
+            "comparisons": 634462228,
+            "code_errors": 115295637,
+            "analog_code_errors": 116587245,
+            "prefix_code_errors": 17414456,
+            "clipped_raw": 0,
+            "absolute_code_error": 327116643
+          },
+          "layer2.1.conv2": {
+            "requests": 98304000,
+            "gated": 0,
+            "conversions": 98304000,
+            "sa_calls": 96768000,
+            "near": 58038787,
+            "comparisons": 438199278,
+            "code_errors": 92418922,
+            "analog_code_errors": 96767988,
+            "prefix_code_errors": 22088091,
+            "clipped_raw": 0,
+            "absolute_code_error": 295959019
+          },
+          "layer3.2.conv2": {
+            "requests": 81920000,
+            "gated": 0,
+            "conversions": 81920000,
+            "sa_calls": 81280000,
+            "near": 33821925,
+            "comparisons": 452428450,
+            "code_errors": 77947217,
+            "analog_code_errors": 80940723,
+            "prefix_code_errors": 17358510,
+            "clipped_raw": 0,
+            "absolute_code_error": 211795123
+          }
+        },
+        "CISA": {
+          "valid_detector_calls": 305024000,
+          "rail_bypass_calls": 0,
+          "held_d_edge_extrapolation_calls": 122415292,
+          "held_CM_edge_extrapolation_calls": 100404912,
+          "threshold_bracket_calls": 112719731,
+          "target_mV": 20,
+          "skip": 6,
+          "held_injected": true,
+          "modeled_detector_subtotal_upper_pJ": 17416870.4
+        },
+        "sparsity_diagnostic": {
+          "potential_zero_gated_events_NOT_skipped": 81457248,
+          "activation_zeros": 6755076,
+          "activation_elements": 14336000,
+          "weight_zeros_repeated_per_call": 1207625,
+          "weight_elements_repeated_per_call": 6048000
+        },
+        "SA_hit_fraction_of_all_conversions": 0.5168061073704769,
+        "whole_ADC_conversion_skip_fraction": 0.0
+      }
+    }
+  }
+}

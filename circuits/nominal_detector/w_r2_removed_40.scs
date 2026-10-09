@@ -1,0 +1,33 @@
+simulator lang=spectre
+global 0
+include "/home/zhangyunheng/PDK/ICsprout_55LLULP1233_V1p14_PDK/ICsprout_55LLULP1233_1P5M_4lc_1T4Mc_RDL1_v1p14/model/spectre/icsprout_v1p15_usage_spe.lib" section=tt_mos
+include "/home/liuyufei/cisa2020_b_20260910/cm_opt/cisa_b.scs"
+include "/home/liuyufei/cisa2020_b_20260910/cm_opt/detector_logic.scs"
+include "/home/liuyufei/cisa2020_b_20260910/cm_opt/window_front_r2.scs"
+ahdl_include "/home/liuyufei/cisa2020_b_20260910/cm_opt/w_r2_removed_40.va"
+VP (VPS 0) vsource dc=1.2
+VN (VNS 0) vsource dc=1.2
+VL (VLS 0) vsource dc=1.2
+VB (VBS 0) vsource dc=1.2
+E0 (VPS VCP) meter CH=0
+E1 (VNS VCN) meter CH=1
+E2 (VLS VLOG) meter CH=2
+E3 (VBS VBIAS) meter CH=3
+E4 (PS PAD) meter CH=4
+E5 (NS NAD) meter CH=5
+E6 (CR CS) meter CH=6
+RC (CS CLK) resistor r=100
+E7 (WR WS) meter CH=7
+RW (WS WIN) resistor r=100
+E8 (AR AS) meter CH=8
+RA (AS ACQ) resistor r=100
+HP (PAD IP) hold_fixture
+HN (NAD IN) hold_fixture
+CHP (IP 0) capacitor c=50f
+CHN (IN 0) capacitor c=50f
+HO (IP IN) hold_observer
+F (PS NS CR WR AR PP PN NP NN Q QB A1 B1 A2 B2) stimulus
+simulatorOptions options temp=27 tnom=27 scale=0.9 scalem=1 gmin=1e-12 rforce=1 maxnotes=8 maxwarns=8
+saveOptions options save=selected currents=selected
+save IP IN A1 B1 A2 B2 CLK WIN ACQ PP PN NP NN RAWF Q QB VP:p VN:p VL:p VB:p RC:1 RW:1 RA:1
+tran tran stop=65.001n maxstep=1p errpreset=conservative

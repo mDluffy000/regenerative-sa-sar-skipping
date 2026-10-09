@@ -1,0 +1,7 @@
+{
+  "exact_CIM_vs_digital_max_logit_error": 0.0,
+  "no_gate_native_logit_invariance": true,
+  "new_requests": 45547520,
+  "new_conversions": 45547520,
+  "old_conversions": 25759040
+}

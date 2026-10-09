@@ -1,0 +1,101 @@
+{
+  "cimloop": {
+    "url": "https://github.com/mit-emze/cimloop",
+    "commit": "481c044e96034e125c1a442e92c73b5d05c1f506",
+    "status": ""
+  },
+  "raella_original_reference": {
+    "url": "https://github.com/mit-emze/raella",
+    "commit": "57a394c4d24595e23f1744c0d1439c3f4115b5cf",
+    "status": ""
+  },
+  "environment_reference": "../adc_reuse_experiment/int4_v1/environment_evidence.json",
+  "legacy_manifest_sha256": "a211335b9ab41340fbd418138802f670a80d10770cff87950d6c208fbfc80190",
+  "calibration_sha256": "f859aa30206130a606ca4603cb0364d4f0dd0b0ac17ea196d3ef1df32ea12c88",
+  "accuracy_scope": "100 legacy development + 100 independent heldout; three target conv ADC injection",
+  "trace_sample_ids": [
+    0,
+    1
+  ],
+  "public_validation_entry": "official _tests.py:test_energy_breakdown",
+  "isaac_acceptance": {
+    "ordered_stream_sha256": "81c12d8772ee464c99d2e4fed8db68840319aa66044a098f36ab6ee016322439",
+    "status": "pass_with_declared_transfer_and_timing_supplements",
+    "public_validation": "official test_energy_breakdown with CIM_ARCHITECTURE=True compatibility injection",
+    "integer_exact": true,
+    "trace_replay": true,
+    "service_order_verified": true,
+    "trace_events": 1245184,
+    "checks": [
+      {
+        "layer": "layer1.0.conv1",
+        "trace_events": 524288,
+        "timeloop_adc_read_actions": 524288.0,
+        "adc_read_energy_pj": 1.92921,
+        "energy_count_check_relative_error": 0.0021245428856384585
+      },
+      {
+        "layer": "layer2.1.conv2",
+        "trace_events": 393216,
+        "timeloop_adc_read_actions": 393216.0,
+        "adc_read_energy_pj": 1.92921,
+        "energy_count_check_relative_error": 0.0021245428856384585
+      },
+      {
+        "layer": "layer3.2.conv2",
+        "trace_events": 327680,
+        "timeloop_adc_read_actions": 327680.0,
+        "adc_read_energy_pj": 1.92921,
+        "energy_count_check_relative_error": 0.0021245428856386805
+      }
+    ],
+    "limitations": [
+      "public model has no per-sample ADC transfer; linear lower-half curve is explicit supplement",
+      "public timing lacks ADC throughput constraint; 100ns read envelope is paper-derived schedule, not public cycles"
+    ]
+  },
+  "raella_acceptance": {
+    "ordered_stream_sha256": "d899ad648d826f939c36c4f28f26435ede819469739d217f13166e4a45d41f32",
+    "status": "pass_with_declared_fixed_slicing_and_schedule_supplements",
+    "integer_exact": true,
+    "trace_replay": true,
+    "service_order_verified": true,
+    "native_gating_causal": true,
+    "trace_requests": 178548,
+    "analog_candidates": 655360,
+    "checks": [
+      {
+        "layer": "layer1.0.conv1",
+        "analog_candidates": 327680,
+        "requests": 101272,
+        "conversions": 101272,
+        "gated": 226408,
+        "integer_exact": true,
+        "trace_replay": true
+      },
+      {
+        "layer": "layer2.1.conv2",
+        "analog_candidates": 163840,
+        "requests": 39056,
+        "conversions": 39056,
+        "gated": 124784,
+        "integer_exact": true,
+        "trace_replay": true
+      },
+      {
+        "layer": "layer3.2.conv2",
+        "analog_candidates": 163840,
+        "requests": 38220,
+        "conversions": 38220,
+        "gated": 125620,
+        "integer_exact": true,
+        "trace_replay": true
+      }
+    ],
+    "limitations": [
+      "W4 fixed [3,1] slicing does not execute original adaptive slicing search",
+      "physical ADC lane/column scheduling is a defined supplement; public model has no event scheduler",
+      "public speculation energy coefficients are statistical and not measured event counts"
+    ]
+  }
+}

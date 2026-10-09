@@ -1,0 +1,39 @@
+simulator lang=spectre
+global 0
+include "/home/zhangyunheng/PDK/ICsprout_55LLULP1233_V1p14_PDK/ICsprout_55LLULP1233_1P5M_4lc_1T4Mc_RDL1_v1p14/model/spectre/icsprout_v1p15_usage_spe.lib" section=tt_mos
+include "/home/liuyufei/cisa2020_b_20260910/cm_opt/cisa_b.scs"
+include "/home/liuyufei/cisa2020_b_20260910/cm_opt/detector_logic.scs"
+include "/home/liuyufei/cisa2020_b_20260910/cm_opt/window_front_r2.scs"
+ahdl_include "/home/liuyufei/cisa2020_b_20260910/cm_opt/w_r2full_ideal_40_1.va"
+VP (VPS 0) vsource dc=1.2
+VN (VNS 0) vsource dc=1.2
+VL (VLS 0) vsource dc=1.2
+VB (VBS 0) vsource dc=1.2
+E0 (VPS VCP) meter CH=0
+E1 (VNS VCN) meter CH=1
+E2 (VLS VLOG) meter CH=2
+E3 (VBS VBIAS) meter CH=3
+E4 (PS IP) meter CH=4
+E5 (NS IN) meter CH=5
+E6 (CR CS) meter CH=6
+RC (CS CLK) resistor r=100
+E7 (WR WS) meter CH=7
+RW (WS WIN) resistor r=100
+E8 (AR AS) meter CH=8
+RA (AS ACQ) resistor r=100
+XF (IP IN A1 B1 A2 B2 ACQ VBIAS VLOG 0) W_FRONT RI=20k RB=631.578947368421k
+XP (A1 B1 CLK PP PN VCP 0) CISA_B
+XN (A2 B2 CLK NP NN VCN 0) CISA_B
+XD (PN NP RAWF VLOG 0) CB_NAND
+XL (RAWF WIN Q QB VLOG 0) CB_LATCH
+CP (PP 0) capacitor c=2f
+CN (PN 0) capacitor c=2f
+CP2 (NP 0) capacitor c=2f
+CN2 (NN 0) capacitor c=2f
+CQ (Q 0) capacitor c=2f
+CQB (QB 0) capacitor c=2f
+F (PS NS CR WR AR PP PN NP NN Q QB A1 B1 A2 B2) stimulus
+simulatorOptions options temp=27 tnom=27 scale=0.9 scalem=1 gmin=1e-12 rforce=1 maxnotes=8 maxwarns=8
+saveOptions options save=selected currents=selected
+save IP IN A1 B1 A2 B2 CLK WIN ACQ PP PN NP NN RAWF Q QB VP:p VN:p VL:p VB:p RC:1 RW:1 RA:1
+tran tran stop=202.501n maxstep=1p errpreset=conservative

@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "verified_files": 61,
+  "last_checkpoints_retained_remote": [
+    "aware_20_skip4_last.pt",
+    "aware_20_skip5_last.pt",
+    "aware_20_skip6_last.pt",
+    "aware_40_skip4_last.pt",
+    "aware_40_skip5_last.pt",
+    "aware_40_skip6_last.pt",
+    "ordinary_ADC_last.pt"
+  ],
+  "test_routes": 28,
+  "training_stages": 7,
+  "local_directory": "/Users/liuyufei/.codex/.chatgpt-projects/g-p-6a671d492b18819189c8bb31c8a6025d/cloud_migration/remote_results/adc_wrn_final_nogate_v1",
+  "all7_best_checkpoints_verified": true
+}

@@ -1,0 +1,53 @@
+[
+  {
+    "layer": "layer1.0.conv1",
+    "prefix": "layer1_0_conv1",
+    "shape": [
+      16,
+      2,
+      1024,
+      16
+    ],
+    "adc_bits": 8,
+    "adc_fs_raw": 192.0,
+    "lsb_raw": 0.7529411764705882,
+    "ordering": "sample,window,activation_bit; per array row_chunk; physical column=weight_slice*C+output_channel",
+    "ordering_status": "explicit deterministic serial schedule supplement; public model has no event scheduler",
+    "physical_voltage_status": "unverified",
+    "transfer_status": "linear endpoint curve supplement to guide lower-half range"
+  },
+  {
+    "layer": "layer2.1.conv2",
+    "prefix": "layer2_1_conv2",
+    "shape": [
+      24,
+      2,
+      256,
+      32
+    ],
+    "adc_bits": 8,
+    "adc_fs_raw": 192.0,
+    "lsb_raw": 0.7529411764705882,
+    "ordering": "sample,window,activation_bit; per array row_chunk; physical column=weight_slice*C+output_channel",
+    "ordering_status": "explicit deterministic serial schedule supplement; public model has no event scheduler",
+    "physical_voltage_status": "unverified",
+    "transfer_status": "linear endpoint curve supplement to guide lower-half range"
+  },
+  {
+    "layer": "layer3.2.conv2",
+    "prefix": "layer3_2_conv2",
+    "shape": [
+      40,
+      2,
+      64,
+      64
+    ],
+    "adc_bits": 8,
+    "adc_fs_raw": 192.0,
+    "lsb_raw": 0.7529411764705882,
+    "ordering": "sample,window,activation_bit; per array row_chunk; physical column=weight_slice*C+output_channel",
+    "ordering_status": "explicit deterministic serial schedule supplement; public model has no event scheduler",
+    "physical_voltage_status": "unverified",
+    "transfer_status": "linear endpoint curve supplement to guide lower-half range"
+  }
+]

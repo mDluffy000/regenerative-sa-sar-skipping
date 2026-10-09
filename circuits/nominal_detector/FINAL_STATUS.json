@@ -1,0 +1,18 @@
+{
+  "status": "STOPPED_NOMINAL_GUARDS_PASS",
+  "active_jobs": [],
+  "final_candidate": "dual Fig1b direct resistor thresholds 19/38 mV",
+  "final_events": 732,
+  "pass_events": 732,
+  "optimization_stopped_utc": "2026-09-10 16:56:14 UTC",
+  "deadline_utc": "2026-09-10 16:59:02 UTC",
+  "independent_psf_crosscheck": "not_completed_exporters_stopped",
+  "oa_verification": "PASS 2 schematics; no symbols",
+  "remaining": [
+    "internal overvoltage",
+    "real passive implementation",
+    "PVT mismatch PEX",
+    "timing generator energy",
+    "independent PSF integral"
+  ]
+}

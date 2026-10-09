@@ -1,0 +1,38 @@
+{
+  "dependencies": {
+    "torch": "2.4.0",
+    "numpy": "2.1.0",
+    "accelergy": "0.4",
+    "pytimeloop": "0.0.1",
+    "accelergy-adc-plug-in": "0.1",
+    "torchvision": "0.19.0",
+    "matplotlib": "3.10.1"
+  },
+  "executables": {
+    "python3": "/usr/bin/python3",
+    "accelergy": "/usr/local/bin/accelergy",
+    "timeloop-model": "/usr/local/bin/timeloop-model"
+  },
+  "adc_plugin_sha256": {
+    "/usr/local/share/accelergy/estimation_plug_ins/accelergy-adc-plug-in/headers.py": "c8eeaa25f377dc7ee682f9b64c8af7d4889b791d65c615a82e23a4f5b71bbb29",
+    "/usr/local/share/accelergy/estimation_plug_ins/accelergy-adc-plug-in/update_model.py": "988a2aa4fba8ba6a78fdfd5b018cc2cf9ab123e73c9351a8ed3f675e68193d6c",
+    "/usr/local/share/accelergy/estimation_plug_ins/accelergy-adc-plug-in/optimizer.py": "e799d84295c542b1f6e4e8923cf218df83670280846ac03f40b64417bb7ddccd",
+    "/usr/local/share/accelergy/estimation_plug_ins/accelergy-adc-plug-in/setup.py": "a7aefc2e6dec239704ee4e2d774cc39dff5c434df36f91090da14a92c5f0b3a3",
+    "/usr/local/share/accelergy/estimation_plug_ins/accelergy-adc-plug-in/adc.estimator.yaml": "09b252b330bacab1ebb597ed7d94e296e8beca6ab2a5adc5f36977372e772626",
+    "/usr/local/share/accelergy/estimation_plug_ins/accelergy-adc-plug-in/model.py": "d41e5c03c42dc1705c63abc2e8ea86b7c62caeb1fbe375f982a7d12336e72be4",
+    "/usr/local/share/accelergy/estimation_plug_ins/accelergy-adc-plug-in/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/usr/local/share/accelergy/estimation_plug_ins/accelergy-adc-plug-in/murmannsurvey.py": "af55bbe44198c9b49525b8c40344109aad3519d8ac9c2c4fb19a90fc2a42b7a9",
+    "/usr/local/share/accelergy/estimation_plug_ins/accelergy-adc-plug-in/accelergywrapper.py": "f032c5a25a0ac4629b1abb28b548104db902771d9928e9b35fec44e767e52c5a",
+    "/usr/local/share/accelergy/estimation_plug_ins/accelergy-adc-plug-in/adc_data/adc_list.csv": "c18d5a74dadce974d65176a436a7084069eda860cc3668d8fbb3f3ff0f34eada",
+    "/usr/local/share/accelergy/estimation_plug_ins/accelergy-adc-plug-in/adc_data/model.yaml": "4c294157896371edf1bff93101a3a283e26fa0251f73b80a3690f941f787b1e1"
+  },
+  "model_package_sha256": {
+    "/root/.cache/torch/hub/chenyaofo_pytorch-cifar-models_master/pytorch_cifar_models/repvgg.py": "677b35230b9ddecc3e387c7d93764a21d9e5ea445e5d7e162dcb196a13e1473b",
+    "/root/.cache/torch/hub/chenyaofo_pytorch-cifar-models_master/pytorch_cifar_models/vgg.py": "5562540e312da9184ff2e4ebc290dc68a9aec1e2a3f5b1e395b9cab4d7e8c3e5",
+    "/root/.cache/torch/hub/chenyaofo_pytorch-cifar-models_master/pytorch_cifar_models/mobilenetv2.py": "8d78f491e55286754c0faad9f70fac8e329f7073c930d7aa68962cb2aae69938",
+    "/root/.cache/torch/hub/chenyaofo_pytorch-cifar-models_master/pytorch_cifar_models/vit.py": "3720f1b1a207db2b3c2dafc663edb7ec7d33a7149a4c688edafd51315fbc6bd7",
+    "/root/.cache/torch/hub/chenyaofo_pytorch-cifar-models_master/pytorch_cifar_models/shufflenetv2.py": "7a23e8bc69fd4a318acee149ee0e0e8e5fdf36c0aa8f0ab1a3d8bb31e0a32f30",
+    "/root/.cache/torch/hub/chenyaofo_pytorch-cifar-models_master/pytorch_cifar_models/__init__.py": "94cc5a382fe67629b9d1e2ab4eb263bfb1770d5a1e5c5b912ddcf6a6c5febc58",
+    "/root/.cache/torch/hub/chenyaofo_pytorch-cifar-models_master/pytorch_cifar_models/resnet.py": "885b8fd2ccfb8ee27c02d3a382e2951622fdcbc2af2bbca375aaf71d40f5f246"
+  }
+}

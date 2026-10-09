@@ -1,0 +1,1 @@
+{"target_mV": 40, "ri_kohm": 20, "rb_kohm": 631.578947368421, "topology": "dual Fig1b + direct resistive thresholds 19/38 mV + NAND/latch", "read_deadline_ps": 985, "core_start_ps": 250, "window_close_ps": 750, "held_50fF": true, "threshold_scale": 0.95, "actual_ratio_threshold_mV": 38.0}

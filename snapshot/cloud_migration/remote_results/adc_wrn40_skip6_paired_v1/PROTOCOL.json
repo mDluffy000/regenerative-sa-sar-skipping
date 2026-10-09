@@ -1,0 +1,20 @@
+{
+  "branches": [
+    [
+      "combined_40_skip6",
+      "sa",
+      40,
+      6,
+      true
+    ]
+  ],
+  "epochs": 20,
+  "train": 2000,
+  "validation": 500,
+  "test": 1000,
+  "BN": "train-only reset cumulative mean, batch32, no augmentation, weights unchanged; then frozen statistics during training",
+  "selection": "best validation accuracy then CE, epoch0 included; all branches frozen before test",
+  "causal_scope": "BN calibration and subsequent training effects recorded separately; within fixed simulator, not universal causality",
+  "gating": "OFF; digital-known potential gates counted only",
+  "history": "exploratory repair of previous failed matrix; previously observed test set"
+}

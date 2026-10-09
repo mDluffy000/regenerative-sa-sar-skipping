@@ -1,0 +1,15 @@
+{
+  "epochs": 5,
+  "train_images": 2000,
+  "validation_images": 500,
+  "test_used": false,
+  "branches": [
+    "native_ADC",
+    "SA20_skip4",
+    "SA40_skip6"
+  ],
+  "initialization": "same original W4A4 parent plus per-route one-pass BN recalibration, see bn_refresh/PROTOCOL.json",
+  "optimizer": "same AdamW1e-5 to1e-6 and CE+0.5*T^2*KL, T2",
+  "selection": "validation accuracy then CE, epoch0 eligible; all three routes reported; no test results",
+  "note": "Exploratory protocol repair, separate from frozen primary matrix; not additional evidence from independent test data"
+}

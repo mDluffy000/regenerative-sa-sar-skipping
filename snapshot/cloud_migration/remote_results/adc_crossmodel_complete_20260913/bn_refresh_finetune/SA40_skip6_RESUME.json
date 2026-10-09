@@ -1,0 +1,11 @@
+{
+  "completed_epoch": 0,
+  "target_epochs": 5,
+  "optimizer_restored": false,
+  "scheduler_last_epoch": 0,
+  "learning_rates": [
+    1e-05,
+    1e-05
+  ],
+  "epoch_seed_rule": "SEED+300+epoch; original batch order and augmentation reseeded every epoch"
+}

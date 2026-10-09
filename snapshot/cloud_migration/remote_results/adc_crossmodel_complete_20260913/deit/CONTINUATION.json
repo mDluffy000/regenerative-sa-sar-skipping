@@ -1,0 +1,10 @@
+{
+  "start": 1789281162.1032088,
+  "pid": 1714,
+  "parent": "/root/autodl-tmp/adc_crossmodel_cisa_nogate_v1/deit",
+  "parent_source_manifest_verified": true,
+  "source_torch": "2.8.0+cu128",
+  "current_torch": "2.8.0+cu128",
+  "epochs": 20,
+  "partial_epoch_replayed": true
+}

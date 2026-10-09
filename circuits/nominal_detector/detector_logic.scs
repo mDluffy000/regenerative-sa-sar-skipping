@@ -1,0 +1,23 @@
+simulator lang=spectre
+subckt CB_INV A Y VD VS
+N (Y A VS VS) nm1p2_svt_lp w=1.2e-07 l=60n as=2.1e-14 ad=2.1e-14 ps=5.9e-07 pd=5.9e-07 sa=175n sb=175n sd=0 nrs=0.833333333 nrd=0.833333333 nf=1 mr=1 mismod=1 prelayout=1
+P (Y A VD VD) pm1p2_svt_lp w=2.4e-07 l=60n as=4.2e-14 ad=4.2e-14 ps=8.3e-07 pd=8.3e-07 sa=175n sb=175n sd=0 nrs=0.416666667 nrd=0.416666667 nf=1 mr=1 mismod=1 prelayout=1
+ends CB_INV
+subckt CB_NAND A B Y VD VS
+N1 (Y A X VS) nm1p2_svt_lp w=2.4e-07 l=60n as=4.2e-14 ad=4.2e-14 ps=8.3e-07 pd=8.3e-07 sa=175n sb=175n sd=0 nrs=0.416666667 nrd=0.416666667 nf=1 mr=1 mismod=1 prelayout=1
+N2 (X B VS VS) nm1p2_svt_lp w=2.4e-07 l=60n as=4.2e-14 ad=4.2e-14 ps=8.3e-07 pd=8.3e-07 sa=175n sb=175n sd=0 nrs=0.416666667 nrd=0.416666667 nf=1 mr=1 mismod=1 prelayout=1
+P1 (Y A VD VD) pm1p2_svt_lp w=2.4e-07 l=60n as=4.2e-14 ad=4.2e-14 ps=8.3e-07 pd=8.3e-07 sa=175n sb=175n sd=0 nrs=0.416666667 nrd=0.416666667 nf=1 mr=1 mismod=1 prelayout=1
+P2 (Y B VD VD) pm1p2_svt_lp w=2.4e-07 l=60n as=4.2e-14 ad=4.2e-14 ps=8.3e-07 pd=8.3e-07 sa=175n sb=175n sd=0 nrs=0.416666667 nrd=0.416666667 nf=1 mr=1 mismod=1 prelayout=1
+ends CB_NAND
+subckt CB_COMPLETION OP ON RES VD VS
+IP (OP NP VD VS) CB_INV
+IN (ON NN VD VS) CB_INV
+ND (NP NN RES VD VS) CB_NAND
+ends CB_COMPLETION
+subckt CB_LATCH D W Q QB VD VS
+ID (D DB VD VS) CB_INV
+G1 (D W S VD VS) CB_NAND
+G2 (DB W R VD VS) CB_NAND
+L1 (S QB Q VD VS) CB_NAND
+L2 (R Q QB VD VS) CB_NAND
+ends CB_LATCH

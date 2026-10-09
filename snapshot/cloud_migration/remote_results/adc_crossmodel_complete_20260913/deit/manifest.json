@@ -1,0 +1,40 @@
+{
+  "sources": {
+    "FROZEN_PROTOCOL.json": "28fd5ead1c211b2dc6920b74dc08e91e16ed43405e3aa7205c01f75b0d42400c",
+    "INPUT_SHA256.json": "b8ec5a43fb949459cb57d84765b91c3c0dfb2874952085197681222fb60b1f93",
+    "deit_data.py": "06ebdb8c0d22cabfdcbdcdcd4f16fd3906543d053e6cc71c00ad88cbef41962d",
+    "deit_model.py": "f84a4b33a7b8a1dffa73d61f47955030dfe7c9ba3ea790cbbfbabf8a77f0e8c5",
+    "events_cisa.cu": "801914d52247ca52e98254d0cc8bc039764510777a8beccb4e6dd787ea3b2395",
+    "gpu_parent.py": "2e1089f06cfb842f7b1edc9a23614d1644ccd1bf2d2a8f70a17d795763569962",
+    "hardware.py": "492a3cc6c896d5bb1134d65b85a7671602c0d72e59f4b910a1b44a7a6c0822bf",
+    "held_20.bin": "0982dd85d47a08730aba484e188c36329a985ab8f5c74b328e6d3e336fb796b5",
+    "held_40.bin": "9b77e4c949ac92b99ff101f53c8183a9b2ff70a26bbd35d8f2e50417c6a908c5",
+    "model_contract.json": "615cac606d279ff9b44198819057d40c55186add70b1b618e05ab3dff50097ec",
+    "models.py": "53abe49bfef1b5133255ecde2fbfa3f0a6a5981c43c643b05266a550af3d9796",
+    "oracle.py": "fba58ed57be8159d2fc1db837ddde62ce062735120ffffaa2f6687318684270a",
+    "resnet_quant.py": "69ccdf29c9a529956b13b78c326ca6725ae7461d47dcb54f6bfefabf71f29c62",
+    "run.py": "54145eb880b04cb870118366ec0f4a3d82dfd411b10a82eb0836f8332740e55c",
+    "launch.py": "a61c59de4cfe9dc224f5df41deb534bd99968e608c25ae75eba986d3b23422a0",
+    "LAUNCH_STARTED.json": "782a47e347b4ffb03bf194aee7996375073e15b6df10172c766d7cd6516460da",
+    "PIDS.json": "290a3c7d48fbe8da3d535cef3aab6463d65b4ddc7f2fcb01a50f93b455d5db06",
+    "input/WRN_FROZEN_PROTOCOL.json": "8318f62a98f39434efd14de5e60f5163af71cb966fddd3b5feedd29c82703e39",
+    "input/deit_W4A4_best.pt": "8d80f6a1f6c890f178f560a5a1c9f3bb4c6a80f4128fc5149a76f0f6b1d4c6d2",
+    "input/deit_pilot_split.json": "e34d3051197895bf289647a3dc22047c251cc793c93c778dc6f776a431aeed34",
+    "input/deit_qat_calibration.json": "1f16a3fd3b240b822b5d9eca64187f3ce35a7a5a6face0ad7593b17a01eaae91",
+    "input/deit_split.json": "e3c4b5be083b7586d781f0d1af4d53728232ae3c2811ba2b4c6860a6d23e5ca0",
+    "input/deit_test_ids.json": "1a6489a120043646dfafc34eb712cfbb18ba7936e6ab2c1cf92869fb411f9096",
+    "input/resnet_W4A4.pt": "8bc97afe4583cf881e94308a986a3f979a3285ee0095905ee4f956ac66684f4e",
+    "input/resnet_old_hardware_split.json": "d048cf112f8f0869f061258091fd4929bcd51fa7cc0bcf1f77c7394dea95efd8",
+    "input/resnet_parent_split.json": "3e791a2ffe058d539c87ce0cf515f5f14d3c6f6c3f79ca5ed15ab0f29a55cb01",
+    "input/resnet_source.py": "885b8fd2ccfb8ee27c02d3a382e2951622fdcbc2af2bbca375aaf71d40f5f246"
+  },
+  "torch": "2.8.0+cu128",
+  "cuda": "12.8",
+  "gpu": "NVIDIA RTX 6000D",
+  "seed": 20260913,
+  "hardware_layers": [
+    "blocks.0.mlp.fc2",
+    "blocks.5.mlp.fc2",
+    "blocks.11.mlp.fc2"
+  ]
+}

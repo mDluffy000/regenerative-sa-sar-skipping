@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "mode": "adc",
+      "disturbance": false,
+      "logits_exact": true,
+      "counts_exact": true,
+      "gated": 19788480
+    },
+    {
+      "mode": "disturbance",
+      "disturbance": true,
+      "logits_exact": true,
+      "counts_exact": true,
+      "gated": 20258240
+    },
+    {
+      "mode": "sa",
+      "disturbance": false,
+      "logits_exact": true,
+      "counts_exact": true,
+      "gated": 19988800
+    },
+    {
+      "mode": "sa",
+      "disturbance": true,
+      "logits_exact": true,
+      "counts_exact": true,
+      "gated": 19060160
+    }
+  ]
+}

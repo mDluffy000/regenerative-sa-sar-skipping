@@ -1,0 +1,23 @@
+{
+  "events_cisa.cu": "801914d52247ca52e98254d0cc8bc039764510777a8beccb4e6dd787ea3b2395",
+  "held_20.bin": "0982dd85d47a08730aba484e188c36329a985ab8f5c74b328e6d3e336fb796b5",
+  "gpu_parent.py": "2e1089f06cfb842f7b1edc9a23614d1644ccd1bf2d2a8f70a17d795763569962",
+  "resnet_quant.py": "69ccdf29c9a529956b13b78c326ca6725ae7461d47dcb54f6bfefabf71f29c62",
+  "held_40.bin": "9b77e4c949ac92b99ff101f53c8183a9b2ff70a26bbd35d8f2e50417c6a908c5",
+  "FROZEN_PROTOCOL.json": "28fd5ead1c211b2dc6920b74dc08e91e16ed43405e3aa7205c01f75b0d42400c",
+  "model_contract.json": "615cac606d279ff9b44198819057d40c55186add70b1b618e05ab3dff50097ec",
+  "hardware.py": "b00e49f43d8fe2de0e945b4c5a987a06e11b2f95ae0181fdf6cc2373d690b48f",
+  "deit_model.py": "f84a4b33a7b8a1dffa73d61f47955030dfe7c9ba3ea790cbbfbabf8a77f0e8c5",
+  "oracle.py": "fba58ed57be8159d2fc1db837ddde62ce062735120ffffaa2f6687318684270a",
+  "deit_data.py": "06ebdb8c0d22cabfdcbdcdcd4f16fd3906543d053e6cc71c00ad88cbef41962d",
+  "input/resnet_old_hardware_split.json": "d048cf112f8f0869f061258091fd4929bcd51fa7cc0bcf1f77c7394dea95efd8",
+  "input/resnet_parent_split.json": "3e791a2ffe058d539c87ce0cf515f5f14d3c6f6c3f79ca5ed15ab0f29a55cb01",
+  "input/deit_split.json": "e3c4b5be083b7586d781f0d1af4d53728232ae3c2811ba2b4c6860a6d23e5ca0",
+  "input/resnet_W4A4.pt": "8bc97afe4583cf881e94308a986a3f979a3285ee0095905ee4f956ac66684f4e",
+  "input/deit_pilot_split.json": "e34d3051197895bf289647a3dc22047c251cc793c93c778dc6f776a431aeed34",
+  "input/resnet_source.py": "885b8fd2ccfb8ee27c02d3a382e2951622fdcbc2af2bbca375aaf71d40f5f246",
+  "input/WRN_FROZEN_PROTOCOL.json": "8318f62a98f39434efd14de5e60f5163af71cb966fddd3b5feedd29c82703e39",
+  "input/deit_qat_calibration.json": "1f16a3fd3b240b822b5d9eca64187f3ce35a7a5a6face0ad7593b17a01eaae91",
+  "input/deit_test_ids.json": "1a6489a120043646dfafc34eb712cfbb18ba7936e6ab2c1cf92869fb411f9096",
+  "input/deit_W4A4_best.pt": "8d80f6a1f6c890f178f560a5a1c9f3bb4c6a80f4128fc5149a76f0f6b1d4c6d2"
+}

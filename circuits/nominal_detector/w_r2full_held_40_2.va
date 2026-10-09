@@ -1,0 +1,79 @@
+`include "constants.vams"
+`include "disciplines.vams"
+module meter(src,load);
+inout src,load;electrical src,load;branch(src,load) b;
+parameter integer CH=0;
+real e,g,r,p,ep,gp,rp;integer slot;
+analog begin
+V(b)<+0;p=V(load)*I(b);e=idt(p,0);g=idt(p>0?p:0,0);r=idt(p<0?-p:0,0);
+@(initial_step) begin ep=0;gp=0;rp=0;slot=0;end
+@(timer(2.5n,2.5n)) begin $strobe("ENERGY,%d,%d,%.15g,%.15g,%.15g",slot,CH,e-ep,g-gp,r-rp);ep=e;gp=g;rp=r;slot=slot+1;end
+end
+endmodule
+module stimulus(P,N,CR,WR,AR,PP,PN,NP,NN,Q,QB,VP1,VN1,VP2,VN2);
+output P,N,CR,WR,AR;input PP,PN,NP,NN,Q,QB,VP1,VN1,VP2,VN2;
+electrical P,N,CR,WR,AR,PP,PN,NP,NN,Q,QB,VP1,VN1,VP2,VN2;
+real cm,d,clk,win,acq,ph,lfar,lnear;integer slot,code;
+analog begin
+@(initial_step)begin cm=0.6;d=0;clk=0;win=1;acq=0;slot=0;lfar=0;lnear=0;end
+@(timer(20p,2.5n))begin
+case(slot)
+0:begin cm=0.600000000;d=0.000000000;end
+1:begin cm=1.178000000;d=-0.036000000;end
+2:begin cm=1.178000000;d=0.036000000;end
+3:begin cm=1.178000000;d=0.044000000;end
+4:begin cm=1.180000000;d=0.000000000;end
+5:begin cm=1.180000000;d=-0.036000000;end
+6:begin cm=1.180000000;d=0.036000000;end
+7:begin cm=1.185000000;d=0.000000000;end
+8:begin cm=1.188000000;d=0.000000000;end
+9:begin cm=1.190000000;d=0.000000000;end
+10:begin cm=1.195000000;d=0.000000000;end
+11:begin cm=1.200000000;d=0.000000000;end
+endcase
+lfar=0;lnear=0;
+end
+@(timer(40p,2.5n))acq=1;
+@(timer(250p,2.5n))clk=1;
+@(timer(750p,2.5n))win=0;
+@(timer(780p,2.5n))acq=0;
+@(timer(900p,2.5n))clk=0;
+@(timer(1200p,2.5n))win=1;
+V(P)<+transition(cm+d/2,0,10p,10p);V(N)<+transition(cm-d/2,0,10p,10p);
+V(CR)<+transition(1.2*clk,0,10p,10p);V(WR)<+transition(1.2*win,0,10p,10p);V(AR)<+transition(1.2*acq,0,10p,10p);
+@(timer(240p,2.5n))$strobe("BIASED,%d,%.15g,%.15g,%.15g,%.15g",slot,V(VP1),V(VN1),V(VP2),V(VN2));
+@(timer(0.25p,0.25p))begin
+ph=$abstime-floor($abstime/2.5n)*2.5n;
+if(ph>255p && ph<1190p)begin
+if(!(V(Q)>0.96 && V(QB)<0.24))lfar=ph;
+if(!(V(Q)<0.24 && V(QB)>0.96))lnear=ph;
+end
+end
+@(timer(745p,2.5n))$strobe("CORECAP,%d,%.15g,%.15g,%.15g,%.15g",slot,V(PP),V(PN),V(NP),V(NN));
+@(timer(985p,2.5n))$strobe("DEADLINE,%d,%.15g,%.15g",slot,V(Q),V(QB));
+@(timer(1190p,2.5n))begin
+code=0;if(V(Q)>0.96 && V(QB)<0.24)code=1;if(V(Q)<0.24 && V(QB)>0.96)code=-1;
+$strobe("RESULT,%d,%.15g,%.15g,%d,%.15g,%.15g",slot,cm,d,code,lfar,lnear);
+end
+@(timer(2490p,2.5n))begin $strobe("RESET,%d,%.15g,%.15g,%.15g,%.15g,%.15g,%.15g",slot,V(PP),V(PN),V(NP),V(NN),V(Q),V(QB));slot=slot+1;end
+end
+endmodule
+module hold_fixture(src,h);
+inout src,h;electrical src,h;real sw;
+analog begin
+@(initial_step)sw=1;
+@(timer(35p,2.5n))sw=0;
+@(timer(1900p,2.5n))sw=1;
+I(src,h)<+V(src,h)*(1e-12+transition(sw,0,1p,1p));
+end
+endmodule
+module hold_observer(P,N);
+input P,N;electrical P,N;integer slot;
+analog begin
+@(initial_step)slot=0;
+@(timer(39p,2.5n))$strobe("HPRE,%d,%.15g,%.15g",slot,V(P),V(N));
+@(timer(745p,2.5n))$strobe("HCAP,%d,%.15g,%.15g",slot,V(P),V(N));
+@(timer(985p,2.5n))$strobe("HADC,%d,%.15g,%.15g",slot,V(P),V(N));
+@(timer(2490p,2.5n))slot=slot+1;
+end
+endmodule

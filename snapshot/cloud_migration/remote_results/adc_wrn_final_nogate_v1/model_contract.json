@@ -1,0 +1,66 @@
+{
+  "source": "B CISA2020 Fig1b two-core window detector, 55nm schematic TT27C1.2V",
+  "source_sha256": {
+    "PACKAGE_MANIFEST.json": "4ad36534c3c5b51197b45132b26ef124a3e76e0ce703e078f4b0f904a603febd",
+    "REPORT.md": "cc4461ba6314f86b9098a565583da26fee9d4a31c0e9642253df8285859c740d",
+    "final_events.csv": "96e8af31879aad8f765258c51469e8ba7a2f49a0926bec47cbaafc8b7750c823",
+    "final_summary.csv": "344370253c1aa053d91b54e6495de6cacc2f3a2857608d070a6de56b467de496",
+    "held_disturbance_vs_removed.csv": "d5fb48da6aecd1dd33ac6c62755ec324f33a25a869fb4afbcd754d945fa8220b"
+  },
+  "voltage_mapping": "V=raw/160; ADC inverse RNE(raw*255/192); raw above192 not clipped before mapping",
+  "ADC_bits": 8,
+  "skip_bits": [
+    4,
+    5,
+    6
+  ],
+  "threshold_mV": {
+    "20": 19,
+    "40": 38
+  },
+  "guard_bracket_mV": {
+    "20": [
+      16,
+      24
+    ],
+    "40": [
+      36,
+      44
+    ]
+  },
+  "sampling_ps": 985,
+  "service_readout_ps": 760,
+  "characterized_event_period_ps": 2500,
+  "held_model": "deterministic bilinear CM/signed-d interpolation of baseline-subtracted HADC_P; outside grid clamp to edge and count; no fitted random distribution",
+  "state": "P=current fresh sample, N=previous active sample held at prior985ps; prior returned code feeds prefix; N residual discarded after old sample already digitized; state extension beyond B test history assumed",
+  "decision": "input-referred19/38mV step approximation; guard sweeps constrain intervals, not precise transition. Do not add HCAP error again to this decision",
+  "rail_policy": "if either SA input outside0..1.2V, bypass detector and use full native ADC; explicit software completion assumption",
+  "fit_data": "only B schematic data; no workload labels used",
+  "checks": {
+    "20": {
+      "guard_events": 390,
+      "grid_points": 25,
+      "threshold_mV": 19,
+      "guard_bracket_mV": [
+        16,
+        24
+      ]
+    },
+    "40": {
+      "guard_events": 342,
+      "grid_points": 25,
+      "threshold_mV": 38,
+      "guard_bracket_mV": [
+        36,
+        44
+      ]
+    }
+  },
+  "caveats": [
+    "985ps is assumed ADC sample time",
+    "large-d residual extrapolation and arbitrary history not characterized",
+    "no PVT,MC,PEX or extra Gaussian noise",
+    "0..1.2V raw full-scale mapping assumed; native digital transfer unchanged"
+  ],
+  "zero_gating": false
+}

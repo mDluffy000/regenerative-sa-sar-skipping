@@ -1,0 +1,36 @@
+{
+  "ordered_stream_sha256": "81c12d8772ee464c99d2e4fed8db68840319aa66044a098f36ab6ee016322439",
+  "status": "pass_with_declared_transfer_and_timing_supplements",
+  "public_validation": "official test_energy_breakdown with CIM_ARCHITECTURE=True compatibility injection",
+  "integer_exact": true,
+  "trace_replay": true,
+  "service_order_verified": true,
+  "trace_events": 1245184,
+  "checks": [
+    {
+      "layer": "layer1.0.conv1",
+      "trace_events": 524288,
+      "timeloop_adc_read_actions": 524288.0,
+      "adc_read_energy_pj": 1.92921,
+      "energy_count_check_relative_error": 0.0021245428856384585
+    },
+    {
+      "layer": "layer2.1.conv2",
+      "trace_events": 393216,
+      "timeloop_adc_read_actions": 393216.0,
+      "adc_read_energy_pj": 1.92921,
+      "energy_count_check_relative_error": 0.0021245428856384585
+    },
+    {
+      "layer": "layer3.2.conv2",
+      "trace_events": 327680,
+      "timeloop_adc_read_actions": 327680.0,
+      "adc_read_energy_pj": 1.92921,
+      "energy_count_check_relative_error": 0.0021245428856386805
+    }
+  ],
+  "limitations": [
+    "public model has no per-sample ADC transfer; linear lower-half curve is explicit supplement",
+    "public timing lacks ADC throughput constraint; 100ns read envelope is paper-derived schedule, not public cycles"
+  ]
+}

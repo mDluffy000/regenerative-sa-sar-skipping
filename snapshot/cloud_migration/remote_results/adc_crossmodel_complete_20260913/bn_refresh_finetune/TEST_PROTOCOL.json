@@ -1,0 +1,5 @@
+{
+  "protocol": "Finish the three previously fixed 5-epoch branches, freeze all validation choices, evaluate each on the same historical 1000-image test subset as primary ResNet. Report BN-only and BN+finetuning for all three routes; do not select routes or tune using test.",
+  "primary_matrix_unchanged": true,
+  "exploratory_adaptation": true
+}

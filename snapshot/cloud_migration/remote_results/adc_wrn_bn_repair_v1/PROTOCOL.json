@@ -1,0 +1,62 @@
+{
+  "branches": [
+    [
+      "native_control",
+      "adc",
+      20,
+      6,
+      false
+    ],
+    [
+      "prefix_only_20_skip6",
+      "sa",
+      20,
+      6,
+      false
+    ],
+    [
+      "voltage_only_20",
+      "disturbance",
+      20,
+      6,
+      true
+    ],
+    [
+      "combined_20_skip5",
+      "sa",
+      20,
+      5,
+      true
+    ],
+    [
+      "combined_20_skip6",
+      "sa",
+      20,
+      6,
+      true
+    ],
+    [
+      "combined_40_skip4",
+      "sa",
+      40,
+      4,
+      true
+    ],
+    [
+      "combined_40_skip5",
+      "sa",
+      40,
+      5,
+      true
+    ]
+  ],
+  "epochs": 20,
+  "train": 2000,
+  "validation": 500,
+  "test": 1000,
+  "BN": "train-only reset cumulative mean, batch32, no augmentation, weights unchanged; then frozen statistics during training",
+  "selection": "best validation accuracy then CE, epoch0 included; all branches frozen before test",
+  "causal_scope": "BN calibration and subsequent training effects recorded separately; within fixed simulator, not universal causality",
+  "gating": "OFF; digital-known potential gates counted only",
+  "history": "exploratory repair of previous failed matrix; previously observed test set"
+}

@@ -1,0 +1,397 @@
+[
+  {
+    "source": "timeloop-accelergy-exercises/workspace/adc_crossmodel_cisa_nogate_v1/input/resnet_W4A4.pt",
+    "bytes": 1168138,
+    "included": false
+  },
+  {
+    "source": "timeloop-accelergy-exercises/workspace/adc_crossmodel_cisa_nogate_v1/input/deit_W4A4_best.pt",
+    "bytes": 22342923,
+    "included": false
+  },
+  {
+    "source": "cloud_migration/remote_results/adc_wrn_final_nogate_v1/aware_20_skip5_best.pt",
+    "bytes": 146334297,
+    "included": false
+  },
+  {
+    "source": "cloud_migration/remote_results/adc_wrn_final_nogate_v1/aware_40_skip4_best.pt",
+    "bytes": 146334297,
+    "included": false
+  },
+  {
+    "source": "cloud_migration/remote_results/adc_wrn_final_nogate_v1/aware_40_skip5_best.pt",
+    "bytes": 146334297,
+    "included": false
+  },
+  {
+    "source": "cloud_migration/remote_results/adc_wrn_final_nogate_v1/ordinary_ADC_best.pt",
+    "bytes": 146333731,
+    "included": false
+  },
+  {
+    "source": "cloud_migration/remote_results/adc_wrn_final_nogate_v1/aware_20_skip4_best.pt",
+    "bytes": 146334297,
+    "included": false
+  },
+  {
+    "source": "cloud_migration/remote_results/adc_wrn_final_nogate_v1/aware_20_skip6_best.pt",
+    "bytes": 146334297,
+    "included": false
+  },
+  {
+    "source": "cloud_migration/remote_results/adc_wrn_final_nogate_v1/aware_40_skip6_best.pt",
+    "bytes": 146334297,
+    "included": false
+  },
+  {
+    "source": "cloud_migration/remote_results/adc_wrn_bn_repair_v1/combined_40_skip4_best.pt",
+    "bytes": 146335018,
+    "included": false
+  },
+  {
+    "source": "cloud_migration/remote_results/adc_wrn_bn_repair_v1/combined_20_skip5_best.pt",
+    "bytes": 146335018,
+    "included": false
+  },
+  {
+    "source": "cloud_migration/remote_results/adc_wrn_bn_repair_v1/native_control_last.pt",
+    "bytes": 438830789,
+    "included": false
+  },
+  {
+    "source": "cloud_migration/remote_results/adc_wrn_bn_repair_v1/combined_40_skip5_best.pt",
+    "bytes": 146335018,
+    "included": false
+  },
+  {
+    "source": "cloud_migration/remote_results/adc_wrn_bn_repair_v1/combined_20_skip6_last.pt",
+    "bytes": 438832752,
+    "included": false
+  },
+  {
+    "source": "cloud_migration/remote_results/adc_wrn_bn_repair_v1/combined_40_skip5_last.pt",
+    "bytes": 438832752,
+    "included": false
+  },
+  {
+    "source": "cloud_migration/remote_results/adc_wrn_bn_repair_v1/combined_20_skip6_best.pt",
+    "bytes": 146335018,
+    "included": false
+  },
+  {
+    "source": "cloud_migration/remote_results/adc_wrn_bn_repair_v1/native_control_best.pt",
+    "bytes": 146334169,
+    "included": false
+  },
+  {
+    "source": "cloud_migration/remote_results/adc_wrn_bn_repair_v1/combined_20_skip5_last.pt",
+    "bytes": 438832752,
+    "included": false
+  },
+  {
+    "source": "cloud_migration/remote_results/adc_wrn_bn_repair_v1/native_control_BN.pt",
+    "bytes": 146333731,
+    "included": false
+  },
+  {
+    "source": "cloud_migration/remote_results/adc_wrn_bn_repair_v1/combined_40_skip4_last.pt",
+    "bytes": 438832752,
+    "included": false
+  },
+  {
+    "source": "cloud_migration/remote_results/adc_wrn_bn_repair_v1/combined_20_skip6_BN.pt",
+    "bytes": 146334516,
+    "included": false
+  },
+  {
+    "source": "cloud_migration/remote_results/adc_wrn_bn_repair_v1/prefix_only_20_skip6_last.pt",
+    "bytes": 438834651,
+    "included": false
+  },
+  {
+    "source": "cloud_migration/remote_results/adc_wrn_bn_repair_v1/old_40_skip5_BN.pt",
+    "bytes": 146333421,
+    "included": false
+  },
+  {
+    "source": "cloud_migration/remote_results/adc_wrn_bn_repair_v1/voltage_only_20_BN.pt",
+    "bytes": 146334014,
+    "included": false
+  },
+  {
+    "source": "cloud_migration/remote_results/adc_wrn_bn_repair_v1/combined_40_skip4_BN.pt",
+    "bytes": 146334516,
+    "included": false
+  },
+  {
+    "source": "cloud_migration/remote_results/adc_wrn_bn_repair_v1/voltage_only_20_best.pt",
+    "bytes": 146334516,
+    "included": false
+  },
+  {
+    "source": "cloud_migration/remote_results/adc_wrn_bn_repair_v1/old_20_skip5_BN.pt",
+    "bytes": 146333421,
+    "included": false
+  },
+  {
+    "source": "cloud_migration/remote_results/adc_wrn_bn_repair_v1/old_40_skip4_BN.pt",
+    "bytes": 146333421,
+    "included": false
+  },
+  {
+    "source": "cloud_migration/remote_results/adc_wrn_bn_repair_v1/voltage_only_20_last.pt",
+    "bytes": 438831422,
+    "included": false
+  },
+  {
+    "source": "cloud_migration/remote_results/adc_wrn_bn_repair_v1/combined_20_skip5_BN.pt",
+    "bytes": 146334516,
+    "included": false
+  },
+  {
+    "source": "cloud_migration/remote_results/adc_wrn_bn_repair_v1/prefix_only_20_skip6_BN.pt",
+    "bytes": 146335237,
+    "included": false
+  },
+  {
+    "source": "cloud_migration/remote_results/adc_wrn_bn_repair_v1/old_40_skip6_BN.pt",
+    "bytes": 146333421,
+    "included": false
+  },
+  {
+    "source": "cloud_migration/remote_results/adc_wrn_bn_repair_v1/old_20_skip4_BN.pt",
+    "bytes": 146333421,
+    "included": false
+  },
+  {
+    "source": "cloud_migration/remote_results/adc_wrn_bn_repair_v1/combined_40_skip5_BN.pt",
+    "bytes": 146334516,
+    "included": false
+  },
+  {
+    "source": "cloud_migration/remote_results/adc_wrn_bn_repair_v1/prefix_only_20_skip6_best.pt",
+    "bytes": 146335675,
+    "included": false
+  },
+  {
+    "source": "cloud_migration/remote_results/adc_wrn_bn_repair_v1/old_20_skip6_BN.pt",
+    "bytes": 146333421,
+    "included": false
+  },
+  {
+    "source": "cloud_migration/remote_results/remaining_matrix20_v1/SA40_skip4_BN.pt",
+    "bytes": 1182163,
+    "included": false
+  },
+  {
+    "source": "cloud_migration/remote_results/remaining_matrix20_v1/SA40_skip4_last.pt",
+    "bytes": 3509089,
+    "included": false
+  },
+  {
+    "source": "cloud_migration/remote_results/remaining_matrix20_v1/SA40_skip6_best.pt",
+    "bytes": 1182519,
+    "included": false
+  },
+  {
+    "source": "cloud_migration/remote_results/remaining_matrix20_v1/SA20_skip4_last.pt",
+    "bytes": 3509089,
+    "included": false
+  },
+  {
+    "source": "cloud_migration/remote_results/remaining_matrix20_v1/SA20_skip6_best.pt",
+    "bytes": 1182519,
+    "included": false
+  },
+  {
+    "source": "cloud_migration/remote_results/remaining_matrix20_v1/SA20_skip6_last.pt",
+    "bytes": 3509089,
+    "included": false
+  },
+  {
+    "source": "cloud_migration/remote_results/remaining_matrix20_v1/SA20_skip4_best.pt",
+    "bytes": 1182519,
+    "included": false
+  },
+  {
+    "source": "cloud_migration/remote_results/remaining_matrix20_v1/SA40_skip6_last.pt",
+    "bytes": 3509089,
+    "included": false
+  },
+  {
+    "source": "cloud_migration/remote_results/remaining_matrix20_v1/SA40_skip4_best.pt",
+    "bytes": 1182519,
+    "included": false
+  },
+  {
+    "source": "cloud_migration/remote_results/adc_crossmodel_complete_20260913/resnet/aware_20_skip5_best.pt",
+    "bytes": 1183231,
+    "included": false
+  },
+  {
+    "source": "cloud_migration/remote_results/adc_crossmodel_complete_20260913/resnet/aware_40_skip6_last.pt",
+    "bytes": 3511109,
+    "included": false
+  },
+  {
+    "source": "cloud_migration/remote_results/adc_crossmodel_complete_20260913/resnet/aware_40_skip4_best.pt",
+    "bytes": 1183231,
+    "included": false
+  },
+  {
+    "source": "cloud_migration/remote_results/adc_crossmodel_complete_20260913/resnet/aware_40_skip5_best.pt",
+    "bytes": 1183231,
+    "included": false
+  },
+  {
+    "source": "cloud_migration/remote_results/adc_crossmodel_complete_20260913/resnet/aware_20_skip6_last.pt",
+    "bytes": 3511109,
+    "included": false
+  },
+  {
+    "source": "cloud_migration/remote_results/adc_crossmodel_complete_20260913/resnet/ordinary_ADC_best.pt",
+    "bytes": 1182811,
+    "included": false
+  },
+  {
+    "source": "cloud_migration/remote_results/adc_crossmodel_complete_20260913/resnet/aware_20_skip4_best.pt",
+    "bytes": 1183231,
+    "included": false
+  },
+  {
+    "source": "cloud_migration/remote_results/adc_crossmodel_complete_20260913/resnet/aware_20_skip4_last.pt",
+    "bytes": 3511109,
+    "included": false
+  },
+  {
+    "source": "cloud_migration/remote_results/adc_crossmodel_complete_20260913/resnet/ordinary_ADC_last.pt",
+    "bytes": 3510099,
+    "included": false
+  },
+  {
+    "source": "cloud_migration/remote_results/adc_crossmodel_complete_20260913/resnet/aware_40_skip5_last.pt",
+    "bytes": 3511109,
+    "included": false
+  },
+  {
+    "source": "cloud_migration/remote_results/adc_crossmodel_complete_20260913/resnet/aware_20_skip6_best.pt",
+    "bytes": 1183231,
+    "included": false
+  },
+  {
+    "source": "cloud_migration/remote_results/adc_crossmodel_complete_20260913/resnet/aware_40_skip4_last.pt",
+    "bytes": 3511109,
+    "included": false
+  },
+  {
+    "source": "cloud_migration/remote_results/adc_crossmodel_complete_20260913/resnet/aware_20_skip5_last.pt",
+    "bytes": 3511109,
+    "included": false
+  },
+  {
+    "source": "cloud_migration/remote_results/adc_crossmodel_complete_20260913/resnet/aware_40_skip6_best.pt",
+    "bytes": 1183231,
+    "included": false
+  },
+  {
+    "source": "cloud_migration/remote_results/adc_crossmodel_complete_20260913/deit/aware_20_skip5_best.pt",
+    "bytes": 22346975,
+    "included": false
+  },
+  {
+    "source": "cloud_migration/remote_results/adc_crossmodel_complete_20260913/deit/aware_40_skip6_last.pt",
+    "bytes": 67082351,
+    "included": false
+  },
+  {
+    "source": "cloud_migration/remote_results/adc_crossmodel_complete_20260913/deit/aware_40_skip4_best.pt",
+    "bytes": 22346975,
+    "included": false
+  },
+  {
+    "source": "cloud_migration/remote_results/adc_crossmodel_complete_20260913/deit/aware_40_skip5_best.pt",
+    "bytes": 22346975,
+    "included": false
+  },
+  {
+    "source": "cloud_migration/remote_results/adc_crossmodel_complete_20260913/deit/aware_20_skip6_last.pt",
+    "bytes": 67082351,
+    "included": false
+  },
+  {
+    "source": "cloud_migration/remote_results/adc_crossmodel_complete_20260913/deit/ordinary_ADC_best.pt",
+    "bytes": 22346395,
+    "included": false
+  },
+  {
+    "source": "cloud_migration/remote_results/adc_crossmodel_complete_20260913/deit/aware_20_skip4_best.pt",
+    "bytes": 22346975,
+    "included": false
+  },
+  {
+    "source": "cloud_migration/remote_results/adc_crossmodel_complete_20260913/deit/aware_20_skip4_last.pt",
+    "bytes": 67082351,
+    "included": false
+  },
+  {
+    "source": "cloud_migration/remote_results/adc_crossmodel_complete_20260913/deit/ordinary_ADC_last.pt",
+    "bytes": 67080323,
+    "included": false
+  },
+  {
+    "source": "cloud_migration/remote_results/adc_crossmodel_complete_20260913/deit/aware_40_skip5_last.pt",
+    "bytes": 67082351,
+    "included": false
+  },
+  {
+    "source": "cloud_migration/remote_results/adc_crossmodel_complete_20260913/deit/aware_20_skip6_best.pt",
+    "bytes": 22346975,
+    "included": false
+  },
+  {
+    "source": "cloud_migration/remote_results/adc_crossmodel_complete_20260913/deit/aware_40_skip4_last.pt",
+    "bytes": 67082351,
+    "included": false
+  },
+  {
+    "source": "cloud_migration/remote_results/adc_crossmodel_complete_20260913/deit/aware_20_skip5_last.pt",
+    "bytes": 67082351,
+    "included": false
+  },
+  {
+    "source": "cloud_migration/remote_results/adc_crossmodel_complete_20260913/deit/aware_40_skip6_best.pt",
+    "bytes": 22346975,
+    "included": false
+  },
+  {
+    "source": "cloud_migration/remote_results/adc_crossmodel_complete_20260913/bn_refresh_finetune/native_ADC_last.pt",
+    "bytes": 3509089,
+    "included": false
+  },
+  {
+    "source": "cloud_migration/remote_results/adc_crossmodel_complete_20260913/bn_refresh_finetune/SA40_skip6_best.pt",
+    "bytes": 1182519,
+    "included": false
+  },
+  {
+    "source": "cloud_migration/remote_results/adc_crossmodel_complete_20260913/bn_refresh_finetune/SA20_skip4_last.pt",
+    "bytes": 3509089,
+    "included": false
+  },
+  {
+    "source": "cloud_migration/remote_results/adc_crossmodel_complete_20260913/bn_refresh_finetune/SA20_skip4_best.pt",
+    "bytes": 1182519,
+    "included": false
+  },
+  {
+    "source": "cloud_migration/remote_results/adc_crossmodel_complete_20260913/bn_refresh_finetune/SA40_skip6_last.pt",
+    "bytes": 3509089,
+    "included": false
+  },
+  {
+    "source": "cloud_migration/remote_results/adc_crossmodel_complete_20260913/bn_refresh_finetune/native_ADC_best.pt",
+    "bytes": 1182455,
+    "included": false
+  }
+]

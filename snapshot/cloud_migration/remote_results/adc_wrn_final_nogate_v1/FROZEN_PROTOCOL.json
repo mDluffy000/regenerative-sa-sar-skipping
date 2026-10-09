@@ -1,0 +1,37 @@
+{
+  "purpose": "Final bounded WRN accuracy and SAR comparison matrix, no additional zero gating",
+  "model": "WRN28-10 / CIFAR100 / W4A4",
+  "ADC_bits": 8,
+  "voltage_range_V": [
+    0,
+    1.2
+  ],
+  "targets_mV": [
+    20,
+    40
+  ],
+  "nominal_thresholds_mV": [
+    19,
+    38
+  ],
+  "skips": [
+    4,
+    5,
+    6
+  ],
+  "training_epochs": 20,
+  "training_images": 2000,
+  "validation_images": 500,
+  "test_images": 1000,
+  "initialization": "same original W4A4 checkpoint for all7 training branches",
+  "optimizer": "same AdamW1e-5 to1e-6 cosine schedule,20epochs; BN stats frozen, affine/scales trainable",
+  "branches": "one matched ordinary native-ADC control plus6 SA/held-aware branches",
+  "selection": "best validation accuracy then CE, including epoch0; both ranges and all skips reported; test only once after all7 selections frozen",
+  "test_history": "Previously viewed project test subset; exploratory final matrix, not fresh blind evaluation",
+  "zero_gating": "disabled for all data-dependent zeros; only unmapped padding columns excluded",
+  "detector_model": "same deterministic B P-node985ps residual table, signed-d/CM bilinear edge clamp; same rolling reference assumptions",
+  "architecture_scope": "same three conv layers, fixed mapped request count; partial SAR, no whole conversion skipping",
+  "no_additional_experiments": "No automatic extension, hyperparameter search or extra network. Report unsuccessful branches too.",
+  "energy": "report comparison count, valid SA calls, schematic subtotal budget only; no total-system net-energy claim",
+  "sparsity": "record actual zeros and hypothetical gate opportunity diagnostically; no data gates affect conversion schedule"
+}

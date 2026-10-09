@@ -1,0 +1,22 @@
+simulator lang=spectre
+subckt CISA_B (INP INN CLK OUTP OUTN VDD VSS)
+CT1 (A CLK VDD VDD) pm1p2_svt_lp w=270n l=60n as=4.725e-14 ad=4.725e-14 ps=890n pd=890n sa=1.75e-07 sb=1.75e-07 sd=0 nrs=0.3703704 nrd=0.3703704 mismod=1 prelayout=1 nf=1 mr=1
+CT3 (AX CLK VDD VDD) pm1p2_svt_lp w=270n l=60n as=4.725e-14 ad=4.725e-14 ps=890n pd=890n sa=1.75e-07 sb=1.75e-07 sd=0 nrs=0.3703704 nrd=0.3703704 mismod=1 prelayout=1 nf=1 mr=1
+T1 (A AP VDD VDD) pm1p2_svt_lp w=270n l=60n as=4.725e-14 ad=4.725e-14 ps=890n pd=890n sa=1.75e-07 sb=1.75e-07 sd=0 nrs=0.3703704 nrd=0.3703704 mismod=1 prelayout=1 nf=1 mr=1
+T3 (A AP AX VSS) nm1p2_lvt_lp w=240n l=60n as=4.2e-14 ad=4.2e-14 ps=830n pd=830n sa=1.75e-07 sb=1.75e-07 sd=0 nrs=0.4166667 nrd=0.4166667 mismod=1 prelayout=1 nf=1 mr=1
+T5 (AX AP TAIL VSS) nm1p2_lvt_lp w=220n l=60n as=3.85e-14 ad=3.85e-14 ps=790n pd=790n sa=1.75e-07 sb=1.75e-07 sd=0 nrs=0.4545455 nrd=0.4545455 mismod=1 prelayout=1 nf=1 mr=1
+TN1 (A INP AX VSS) nm1p2_lvt_lp w=240n l=60n as=4.2e-14 ad=4.2e-14 ps=830n pd=830n sa=1.75e-07 sb=1.75e-07 sd=0 nrs=0.4166667 nrd=0.4166667 mismod=1 prelayout=1 nf=1 mr=1
+TP1 (AX INN A VDD) pm1p2_svt_lp w=270n l=60n as=4.725e-14 ad=4.725e-14 ps=890n pd=890n sa=1.75e-07 sb=1.75e-07 sd=0 nrs=0.3703704 nrd=0.3703704 mismod=1 prelayout=1 nf=1 mr=1
+CT2 (AP CLK VDD VDD) pm1p2_svt_lp w=270n l=60n as=4.725e-14 ad=4.725e-14 ps=890n pd=890n sa=1.75e-07 sb=1.75e-07 sd=0 nrs=0.3703704 nrd=0.3703704 mismod=1 prelayout=1 nf=1 mr=1
+CT4 (AXP CLK VDD VDD) pm1p2_svt_lp w=270n l=60n as=4.725e-14 ad=4.725e-14 ps=890n pd=890n sa=1.75e-07 sb=1.75e-07 sd=0 nrs=0.3703704 nrd=0.3703704 mismod=1 prelayout=1 nf=1 mr=1
+T2 (AP A VDD VDD) pm1p2_svt_lp w=270n l=60n as=4.725e-14 ad=4.725e-14 ps=890n pd=890n sa=1.75e-07 sb=1.75e-07 sd=0 nrs=0.3703704 nrd=0.3703704 mismod=1 prelayout=1 nf=1 mr=1
+T4 (AP A AXP VSS) nm1p2_lvt_lp w=240n l=60n as=4.2e-14 ad=4.2e-14 ps=830n pd=830n sa=1.75e-07 sb=1.75e-07 sd=0 nrs=0.4166667 nrd=0.4166667 mismod=1 prelayout=1 nf=1 mr=1
+T6 (AXP A TAIL VSS) nm1p2_lvt_lp w=220n l=60n as=3.85e-14 ad=3.85e-14 ps=790n pd=790n sa=1.75e-07 sb=1.75e-07 sd=0 nrs=0.4545455 nrd=0.4545455 mismod=1 prelayout=1 nf=1 mr=1
+TN2 (AP INN AXP VSS) nm1p2_lvt_lp w=240n l=60n as=4.2e-14 ad=4.2e-14 ps=830n pd=830n sa=1.75e-07 sb=1.75e-07 sd=0 nrs=0.4166667 nrd=0.4166667 mismod=1 prelayout=1 nf=1 mr=1
+TP2 (AXP INP AP VDD) pm1p2_svt_lp w=270n l=60n as=4.725e-14 ad=4.725e-14 ps=890n pd=890n sa=1.75e-07 sb=1.75e-07 sd=0 nrs=0.3703704 nrd=0.3703704 mismod=1 prelayout=1 nf=1 mr=1
+TTAIL (TAIL CLK VSS VSS) nm1p2_svt_lp w=420n l=60n as=7.35e-14 ad=7.35e-14 ps=1.19u pd=1.19u sa=1.75e-07 sb=1.75e-07 sd=0 nrs=0.2380952 nrd=0.2380952 mismod=1 prelayout=1 nf=1 mr=1
+MBP1 (OUTP A VDD VDD) pm1p2_svt_lp w=240n l=60n as=4.2e-14 ad=4.2e-14 ps=830n pd=830n sa=1.75e-07 sb=1.75e-07 sd=0 nrs=0.4166667 nrd=0.4166667 mismod=1 prelayout=1 nf=1 mr=1
+MBN1 (OUTP A VSS VSS) nm1p2_svt_lp w=120n l=60n as=2.1e-14 ad=2.1e-14 ps=590n pd=590n sa=1.75e-07 sb=1.75e-07 sd=0 nrs=0.8333333 nrd=0.8333333 mismod=1 prelayout=1 nf=1 mr=1
+MBP2 (OUTN AP VDD VDD) pm1p2_svt_lp w=240n l=60n as=4.2e-14 ad=4.2e-14 ps=830n pd=830n sa=1.75e-07 sb=1.75e-07 sd=0 nrs=0.4166667 nrd=0.4166667 mismod=1 prelayout=1 nf=1 mr=1
+MBN2 (OUTN AP VSS VSS) nm1p2_svt_lp w=120n l=60n as=2.1e-14 ad=2.1e-14 ps=590n pd=590n sa=1.75e-07 sb=1.75e-07 sd=0 nrs=0.8333333 nrd=0.8333333 mismod=1 prelayout=1 nf=1 mr=1
+ends CISA_B

@@ -1,0 +1,3 @@
+target_mV,skip,comparison_reduction_pct,reference_ADC_pJ,reference_cycle_fraction,detector_fJ,gross_reduction_pct,net_reduction_pct,residual_pJ_per_conversion
+20,4,27.3,1.929,0.63,57.1,17.199,14.23891705546916,0.2746687100000001
+40,6,48.19,1.929,0.63,61.31,30.3597,27.18136925868325,0.524328613

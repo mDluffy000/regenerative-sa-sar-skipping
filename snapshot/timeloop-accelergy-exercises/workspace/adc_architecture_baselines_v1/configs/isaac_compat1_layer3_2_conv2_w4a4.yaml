@@ -1,0 +1,9 @@
+{{include_text('/home/workspace/adc_architecture_baselines_v1/cimloop_public/workspace/models/workloads/problem_base.yaml')}}
+problem:
+  <<<: *problem_base
+  name: layer3_2_conv2
+  instance:
+    N: 2
+    P: 64
+    C: 640
+    M: 64

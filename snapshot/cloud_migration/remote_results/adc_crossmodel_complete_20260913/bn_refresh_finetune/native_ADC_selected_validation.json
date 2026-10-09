@@ -1,0 +1,82 @@
+{
+  "n": 500,
+  "correct": 378,
+  "accuracy": 0.756,
+  "CE": 0.8218297958374023,
+  "seconds": 1.7060380093753338,
+  "hardware": {
+    "requests": 311296000,
+    "gated": 0,
+    "conversions": 311296000,
+    "sa_calls": 0,
+    "near": 0,
+    "comparisons": 2490368000,
+    "code_errors": 0,
+    "analog_code_errors": 0,
+    "prefix_code_errors": 0,
+    "clipped_raw": 0,
+    "absolute_code_error": 0,
+    "comparison_saving": 0.0,
+    "layers": {
+      "layer1.0.conv1": {
+        "requests": 131072000,
+        "gated": 0,
+        "conversions": 131072000,
+        "sa_calls": 0,
+        "near": 0,
+        "comparisons": 1048576000,
+        "code_errors": 0,
+        "analog_code_errors": 0,
+        "prefix_code_errors": 0,
+        "clipped_raw": 0,
+        "absolute_code_error": 0
+      },
+      "layer2.1.conv2": {
+        "requests": 98304000,
+        "gated": 0,
+        "conversions": 98304000,
+        "sa_calls": 0,
+        "near": 0,
+        "comparisons": 786432000,
+        "code_errors": 0,
+        "analog_code_errors": 0,
+        "prefix_code_errors": 0,
+        "clipped_raw": 0,
+        "absolute_code_error": 0
+      },
+      "layer3.2.conv2": {
+        "requests": 81920000,
+        "gated": 0,
+        "conversions": 81920000,
+        "sa_calls": 0,
+        "near": 0,
+        "comparisons": 655360000,
+        "code_errors": 0,
+        "analog_code_errors": 0,
+        "prefix_code_errors": 0,
+        "clipped_raw": 0,
+        "absolute_code_error": 0
+      }
+    },
+    "CISA": {
+      "valid_detector_calls": 0,
+      "rail_bypass_calls": 0,
+      "held_d_edge_extrapolation_calls": 0,
+      "held_CM_edge_extrapolation_calls": 0,
+      "threshold_bracket_calls": 0,
+      "target_mV": 20,
+      "skip": 6,
+      "held_injected": false,
+      "modeled_detector_subtotal_upper_pJ": 0.0
+    },
+    "sparsity_diagnostic": {
+      "potential_zero_gated_events_NOT_skipped": 98835040,
+      "activation_zeros": 7177084,
+      "activation_elements": 14336000,
+      "weight_zeros_repeated_per_call": 1176375,
+      "weight_elements_repeated_per_call": 6048000
+    },
+    "SA_hit_fraction_of_all_conversions": 0.0,
+    "whole_ADC_conversion_skip_fraction": 0.0
+  }
+}

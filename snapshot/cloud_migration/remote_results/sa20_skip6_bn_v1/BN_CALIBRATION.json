@@ -1,0 +1,167 @@
+{
+  "before_validation": {
+    "n": 500,
+    "correct": 5,
+    "accuracy": 0.01,
+    "CE": 18.738550186157227,
+    "seconds": 1.748923976905644,
+    "hardware": {
+      "requests": 311296000,
+      "gated": 0,
+      "conversions": 311296000,
+      "sa_calls": 305024000,
+      "near": 183171350,
+      "comparisons": 1391339900,
+      "code_errors": 285584251,
+      "analog_code_errors": 294590452,
+      "prefix_code_errors": 55178189,
+      "clipped_raw": 0,
+      "absolute_code_error": 894061272,
+      "comparison_saving": 0.4413115250436883,
+      "layers": {
+        "layer1.0.conv1": {
+          "requests": 131072000,
+          "gated": 0,
+          "conversions": 131072000,
+          "sa_calls": 126976000,
+          "near": 69271048,
+          "comparisons": 632949712,
+          "code_errors": 115379318,
+          "analog_code_errors": 116542454,
+          "prefix_code_errors": 16654041,
+          "clipped_raw": 0,
+          "absolute_code_error": 328902878
+        },
+        "layer2.1.conv2": {
+          "requests": 98304000,
+          "gated": 0,
+          "conversions": 98304000,
+          "sa_calls": 96768000,
+          "near": 63306077,
+          "comparisons": 406595538,
+          "code_errors": 92616428,
+          "analog_code_errors": 96767999,
+          "prefix_code_errors": 20559639,
+          "clipped_raw": 0,
+          "absolute_code_error": 308290029
+        },
+        "layer3.2.conv2": {
+          "requests": 81920000,
+          "gated": 0,
+          "conversions": 81920000,
+          "sa_calls": 81280000,
+          "near": 50594225,
+          "comparisons": 351794650,
+          "code_errors": 77588505,
+          "analog_code_errors": 81279999,
+          "prefix_code_errors": 17964509,
+          "clipped_raw": 0,
+          "absolute_code_error": 256868365
+        }
+      },
+      "CISA": {
+        "valid_detector_calls": 305024000,
+        "rail_bypass_calls": 0,
+        "held_d_edge_extrapolation_calls": 100523904,
+        "held_CM_edge_extrapolation_calls": 129485337,
+        "threshold_bracket_calls": 137863115,
+        "target_mV": 20,
+        "skip": 6,
+        "held_injected": true,
+        "modeled_detector_subtotal_upper_pJ": 17416870.4
+      },
+      "sparsity_diagnostic": {
+        "potential_zero_gated_events_NOT_skipped": 108484416,
+        "activation_zeros": 7373908,
+        "activation_elements": 14336000,
+        "weight_zeros_repeated_per_call": 1179625,
+        "weight_elements_repeated_per_call": 6048000
+      },
+      "SA_hit_fraction_of_all_conversions": 0.5884153667249178,
+      "whole_ADC_conversion_skip_fraction": 0.0
+    }
+  },
+  "after_validation": {
+    "n": 500,
+    "correct": 277,
+    "accuracy": 0.554,
+    "CE": 1.6450697183609009,
+    "seconds": 1.4005887964740396,
+    "hardware": {
+      "requests": 311296000,
+      "gated": 0,
+      "conversions": 311296000,
+      "sa_calls": 305024000,
+      "near": 178678118,
+      "comparisons": 1418299292,
+      "code_errors": 285907174,
+      "analog_code_errors": 294757887,
+      "prefix_code_errors": 55086507,
+      "clipped_raw": 0,
+      "absolute_code_error": 882685701,
+      "comparison_saving": 0.4304860598915502,
+      "layers": {
+        "layer1.0.conv1": {
+          "requests": 131072000,
+          "gated": 0,
+          "conversions": 131072000,
+          "sa_calls": 126976000,
+          "near": 69029657,
+          "comparisons": 634398058,
+          "code_errors": 115511156,
+          "analog_code_errors": 116711600,
+          "prefix_code_errors": 16789401,
+          "clipped_raw": 0,
+          "absolute_code_error": 328557686
+        },
+        "layer2.1.conv2": {
+          "requests": 98304000,
+          "gated": 0,
+          "conversions": 98304000,
+          "sa_calls": 96768000,
+          "near": 60522289,
+          "comparisons": 423298266,
+          "code_errors": 92545948,
+          "analog_code_errors": 96767999,
+          "prefix_code_errors": 21248660,
+          "clipped_raw": 0,
+          "absolute_code_error": 302223421
+        },
+        "layer3.2.conv2": {
+          "requests": 81920000,
+          "gated": 0,
+          "conversions": 81920000,
+          "sa_calls": 81280000,
+          "near": 49126172,
+          "comparisons": 360602968,
+          "code_errors": 77850070,
+          "analog_code_errors": 81278288,
+          "prefix_code_errors": 17048446,
+          "clipped_raw": 0,
+          "absolute_code_error": 251904594
+        }
+      },
+      "CISA": {
+        "valid_detector_calls": 305024000,
+        "rail_bypass_calls": 0,
+        "held_d_edge_extrapolation_calls": 105114628,
+        "held_CM_edge_extrapolation_calls": 124703662,
+        "threshold_bracket_calls": 132749745,
+        "target_mV": 20,
+        "skip": 6,
+        "held_injected": true,
+        "modeled_detector_subtotal_upper_pJ": 17416870.4
+      },
+      "sparsity_diagnostic": {
+        "potential_zero_gated_events_NOT_skipped": 102696256,
+        "activation_zeros": 7210175,
+        "activation_elements": 14336000,
+        "weight_zeros_repeated_per_call": 1179625,
+        "weight_elements_repeated_per_call": 6048000
+      },
+      "SA_hit_fraction_of_all_conversions": 0.5739814131887335,
+      "whole_ADC_conversion_skip_fraction": 0.0
+    }
+  },
+  "all_trainable_parameters_unchanged": true
+}

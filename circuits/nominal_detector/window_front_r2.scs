@@ -1,0 +1,14 @@
+simulator lang=spectre
+subckt W_FRONT IP IN A1 B1 A2 B2 ACQ VF VL VS
+parameters RI=20k RB=1.2M
+CAP (IP VS) capacitor c=1f
+CAN (IN VS) capacitor c=1f
+RP1 (IP A1) resistor r=RI
+RN1 (IN B1) resistor r=RI
+RP2 (IP A2) resistor r=RI
+RN2 (IN B2) resistor r=RI
+BP1 (A1 VS) resistor r=RB
+BN1 (B1 VF) resistor r=RB
+BP2 (A2 VF) resistor r=RB
+BN2 (B2 VS) resistor r=RB
+ends W_FRONT

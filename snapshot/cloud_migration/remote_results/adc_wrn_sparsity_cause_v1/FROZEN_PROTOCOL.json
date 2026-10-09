@@ -1,0 +1,20 @@
+{
+  "purpose": "Bounded matched 2x2 training experiment for prior zero-gating opportunity decrease",
+  "target_mV": 20,
+  "skip_bits": 6,
+  "epochs_each": 20,
+  "branches": [
+    "ordinary",
+    "voltage_only",
+    "prefix_only",
+    "combined"
+  ],
+  "initialization": "all from same original W4A4; no checkpoint continuation",
+  "data": "same2000 hardware train/500 hardware validation; validation-only mechanism study, no new test selection",
+  "controls": "same seed, augmentation sequence, AdamW/cosine LR1e-5..1e-6, BN running stats frozen, teacher and CE+KD loss",
+  "gate_policy": "original ideal digital-known-zero assumption retained for diagnostic only",
+  "factor_definitions": "voltage factor changes P-node and held reference; prefix factor changes returned-code restriction; interactions not assumed additive",
+  "metrics": "per-layer element zeros, block-bitplane zeros, encoded digit zero columns, learned scales, gate and conversion counts; cross-evaluate each weight set under all4 inference conditions",
+  "max_scope": "4 branches20epochs, no additional threshold/seed/network sweeps",
+  "physical_limits": "same B985ps signed-P table and edge extrapolation; no new physical-interface claim"
+}

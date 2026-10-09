@@ -1,0 +1,7 @@
+target_mV,skip,accuracy_pct,reduction_pct,source,route
+20,4,77.4,27.30028931652042,/Users/liuyufei/.codex/.chatgpt-projects/g-p-6a671d492b18819189c8bb31c8a6025d/cloud_migration/remote_results/adc_wrn_final_nogate_v1/results.json,aware_20_skip4
+20,5,77.0,35.39922798760503,/Users/liuyufei/.codex/.chatgpt-projects/g-p-6a671d492b18819189c8bb31c8a6025d/cloud_migration/remote_results/adc_wrn_bn_repair_v1/results.json,combined_20_skip5_best
+20,6,78.10000000000001,41.33401313287749,/Users/liuyufei/.codex/.chatgpt-projects/g-p-6a671d492b18819189c8bb31c8a6025d/cloud_migration/remote_results/adc_wrn_bn_repair_v1/results.json,combined_20_skip6_best
+40,4,75.5,32.926072603952974,/Users/liuyufei/.codex/.chatgpt-projects/g-p-6a671d492b18819189c8bb31c8a6025d/cloud_migration/remote_results/adc_wrn_bn_repair_v1/results.json,combined_40_skip4_best
+40,5,76.2,39.66508829953859,/Users/liuyufei/.codex/.chatgpt-projects/g-p-6a671d492b18819189c8bb31c8a6025d/cloud_migration/remote_results/adc_wrn_bn_repair_v1/results.json,combined_40_skip5_best
+40,6,77.3,48.18928310970608,/Users/liuyufei/.codex/.chatgpt-projects/g-p-6a671d492b18819189c8bb31c8a6025d/cloud_migration/remote_results/adc_wrn40_skip6_paired_v1/results.json,combined_40_skip6_best
